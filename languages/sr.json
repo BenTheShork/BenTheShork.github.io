@@ -1,0 +1,166 @@
+{
+  "navigation": {
+    "home": "Početna",
+    "story": "O nama",
+    "products": "Proizvodi",
+    "process": "Proces",
+    "facility": "Postrojenje",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "badge": "Od 1993.",
+    "title_main": "Vaš izvor kakao proizvoda",
+    "title_accent": "Kakao Balkan",
+    "description": "Povezujemo globalna tržišta kakaa sa pouzdanim rešenjima snabdevanja. Kakao Balkan je specijalizovan za nabavku i distribuciju vrhunskih kakao proizvoda, za proizvođače i distributere širom sveta.",
+    "button_products": "Pogledajte ponudu",
+    "button_story": "O nama",
+    "stat_label1": "GODINA ISKUSTVA",
+    "stat_label2": "ORGANSKI",
+    "stat_label3": "ZEMALJA"
+  },
+  "story": {
+    "badge": "NAŠ MOTO",
+    "title": "Utemeljeni u tradiciji, posvećeni kvalitetu",
+    "description": "Kakao Balkan povezuje globalna tržišta kakaa kroz stručno snabdevanje i distribuciju, uz stroge standarde kvaliteta koji osiguravaju stabilno snabdevanje za proizvođače i distributere širom sveta.",
+    "feature1_title": "Globalna nabavka",
+    "feature1_desc": "Povezujemo vas sa proizvođačima kakaa iz različitih krajeva sveta.",
+    "feature2_title": "Širok asortiman",
+    "feature2_desc": "U ponudi imamo širok spektar kakao proizvoda.",
+    "feature3_title": "Isporuka širom sveta",
+    "feature3_desc": "Isporučujemo kvalitetne kakao proizvode direktno na vašu adresu, bez obzira na lokaciju."
+  },
+  "products": {
+    "badge": "Vrhunski kvalitet",
+    "title": "Kakao proizvodi",
+    "description": "Nudimo visokokvalitetne kakao proizvode iz najpoznatijih regija sveta — otkrijte vrhunski kvalitet kakaa sa nama.",
+    "see_origins": "Pogledaj poreklo",
+    "interested_title": "Zainteresovani za ovaj proizvod?",
+    "interested_description": "Zatražite detaljne specifikacije, cene i informacije o dostupnosti.",
+    "send_inquiry": "Pošalji upit",
+    "back": "Nazad",
+    "cocoa_powder": {
+      "title": "Kakao prah",
+      "description": "Fino mleven kakao prah bogatog ukusa i arome."
+    },
+    "cocoa_liquor": {
+      "title": "Kakao liker",
+      "description": "Ključni sastojak za proizvodnju vrhunske čokolade."
+    },
+    "cocoa_butter": {
+      "title": "Kakao puter",
+      "description": "Kakao puter vrhunskog kvaliteta. Idealan za proizvodnju čokolade, kozmetiku i kulinarske namene."
+    },
+    "cocoa_cake": {
+      "title": "Kakao pogača",
+      "description": "Kakao pogača visokog kvaliteta, bogata kakao čvrstim materijama. Idealan sastojak za konditorsku i pekarsku industriju."
+    }
+  },
+  "origins": {
+    "malaysia": {
+      "country": "Malezija",
+      "manufacturer1": "Guan Chong Cocoa Manufacturer"
+    },
+    "indonesia": {
+      "country": "Indonezija",
+      "manufacturer1": "PT Golden Harvest Cocoa Indonesia"
+    },
+    "peru": {
+      "country": "Peru",
+      "manufacturer1": "Machu Picchu Foods SA"
+    },
+    "ivory_coast": {
+      "country": "Obala Slonovače",
+      "manufacturer1": "DIAKITE COCOA PRODUCTS SARL",
+      "manufacturer2": "Citract SA"
+    },
+    "ghana": {
+      "country": "Gana",
+      "manufacturer1": "Chocomac Ghana Limited"
+    },
+    "venezuela": {
+      "country": "Venecuela",
+      "manufacturer1": "Cacaos Venezolanos de Calidad C.A.",
+      "manufacturer2": "Procesadora Cacao Real"
+    },
+    "nigeria": {
+      "country": "Nigerija",
+      "manufacturer1": "Johnwents Industries Limited"
+    },
+    "china": {
+      "country": "Kina",
+      "manufacturer1": "Huadong Industrial Limited"
+    },
+    "usa": {
+      "country": "SAD",
+      "manufacturer1": "Savita Naturals LTD"
+    }
+  },
+  "inquiry": {
+    "select_origin_first": "Molimo vas da prvo izaberete poreklo.",
+    "message_template": "Poštovani,\n\nZainteresovan sam za kupovinu {productName} iz {country} ({manufacturer}).\n\nMolim vas da mi dostavite:\n- Detaljne tehničke specifikacije i tehnički list proizvoda\n- Trenutne cene i minimalne količine za porudžbinu\n- Dostupnost i rokove isporuke\n- Sertifikate kvaliteta i prateću dokumentaciju\n- Informaciju o dostupnosti uzorka\n\nBiće mi zadovoljstvo da detaljnije razgovaramo o ovoj mogućnosti za saradnju..\n\nSrdačno,"
+  },
+  "process": {
+    "badge": "VAŠ GLOBALNI PARTNER ZA KAKAO",
+    "title": "Od sirovine do industrijskog obima",
+    "step1_title": "Globalna nabavka",
+    "step1_description": "Održavamo partnerstva sa vrhunskim dobavljačima iz najvažnijih regija za proizvodnju kakaa.",
+    "step2_title": "Kontrola kvaliteta",
+    "step2_description": "Svaka pošiljka prolazi kroz strogu proveru kvaliteta prema međunarodnim standardima i specifikacijama.",
+    "step3_title": "Veleprodajna distribucija",
+    "step3_description": "Specijalizovani smo i za velike količine — snabdevamo proizvođače, distributere i industrijske klijente širom sveta.",
+    "step4_title": "Pouzdana logistika",
+    "step4_description": "Efikasno upravljanje lancem snabdevanja obezbeđuje redovne isporuke u skladu sa vašim proizvodnim potrebama."
+  },
+  "facility": {
+    "badge": "Naše operacije",
+    "title": "Profesionalni distributivni centar",
+    "description": "Pogledajte naše moderno distributivno postrojenje gde se kontrola kvaliteta spaja sa efikasnom logistikom. Naš rad obezbeđuje stabilne lance snabdevanja za klijente širom sveta.",
+    "gallery": {
+      "main_title": "60 000 m² ukupnog skladišnog prostora",
+      "main_description": "",
+      "thumb1_title": "60 000 m² ukupnog skladišnog prostora",
+      "thumb1_subtitle": "",
+      "thumb2_title": "Pomorski transport",
+      "thumb2_subtitle": "",
+      "thumb3_title": "Skladišni prostor",
+      "thumb3_subtitle": "",
+      "thumb4_title": "Skladište",
+      "thumb4_subtitle": "",
+      "thumb5_title": "Logistika",
+      "thumb5_subtitle": "",
+      "thumb6_title": "Prateće operacije",
+      "thumb6_subtitle": "",
+      "thumb7_title": "Sistem upravljanja zalihama",
+      "thumb7_subtitle": ""
+    },
+    "stats": {
+      "warehouse_label": "m² skladišnog prostora",
+      "storage_label": "tona kapaciteta skladišta",
+      "shipments_label": "Isporuka mesečno",
+      "countries_label": "Zemalja u koje isporučujemo"
+    }
+  },
+  "contact": {
+    "badge": "Kontaktirajte nas",
+    "title": "Partnerstvo za vaše potrebe u vezi sa kakaom",
+    "description": "Želite da obezbedite pouzdano snabdevanje kakaom za vaše poslovanje? Kontaktirajte nas za dogovor o ceni, specifikacijama i mogućnostima isporuke prema vašim zahtevima.",
+    "email_label": "Email",
+    "phone_label": "Telefon",
+    "location_label": "Lokacija",
+    "form": {
+      "name_label": "Ime i prezime",
+      "email_label": "Email adresa",
+      "company_label": "Kompanija",
+      "message_label": "Poruka",
+      "message_placeholder": "Molimo opišite vaše potrebe, željene proizvode, lokaciju isporuke i sve specifične zahteve...",
+      "submit_button": "Pošalji upit"
+    }
+  },
+  "footer": {
+    "description": "Vrhunski kakao proizvodi.",
+    "products_title": "Proizvodi",
+    "company_title": "Kompanija",
+    "copyright": "© 2025 Kakao Balkan. Sva prava zadržana.",
+    "attribution_text": "Dizajn slika proizvoda:"
+  }
+}

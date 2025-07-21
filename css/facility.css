@@ -1,0 +1,241 @@
+/* Facility Section */
+.facility {
+    padding: 6rem 0;
+    background: #fff;
+}
+
+.facility-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.facility-gallery {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.gallery-main {
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    height: 500px;
+}
+
+.main-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.main-facility-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+
+
+.main-image:hover .image-overlay {
+    transform: translateY(0);
+}
+
+.image-overlay h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+.image-overlay p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+/* Gallery Grid for 10 thumbnails */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.gallery-grid::-webkit-scrollbar {
+    width: 4px;
+}
+
+.gallery-grid::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 2px;
+}
+
+.gallery-grid::-webkit-scrollbar-thumb {
+    background: #8B4513;
+    border-radius: 2px;
+}
+
+.thumbnail-item {
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    height: 120px;
+}
+
+.thumbnail-item:hover {
+    transform: scale(1.02);
+    border-color: rgba(139, 69, 19, 0.3);
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.2);
+}
+
+.thumbnail-item.active {
+    border-color: #8B4513;
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
+}
+
+.thumbnail-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: 0.8rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.thumbnail-item:hover .thumbnail-overlay {
+    transform: translateY(0);
+}
+
+.thumbnail-overlay h5 {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+    color: white;
+    font-weight: 600;
+}
+
+.thumbnail-overlay p {
+    font-size: 0.75rem;
+    margin: 0;
+    opacity: 0.9;
+    line-height: 1.2;
+}
+
+/* Facility Stats */
+.facility-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.facility-stat {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #f8f6f3;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.facility-stat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #8B4513, #D2691E);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.stat-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.facility-stat .stat-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #8B4513;
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+}
+
+.facility-stat .stat-label {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+    margin-top: 0.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .facility-gallery {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .gallery-main {
+        height: 350px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-height: 300px;
+        gap: 0.5rem;
+    }
+    
+    .thumbnail-item {
+        height: 80px;
+    }
+    
+    .facility-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .facility-stat {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .facility-stats {
+        grid-template-columns: 1fr;
+    }
+}

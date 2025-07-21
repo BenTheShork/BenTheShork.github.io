@@ -1,0 +1,166 @@
+{
+  "navigation": {
+    "home": "Home",
+    "story": "Our Story",
+    "products": "Products",
+    "process": "Process",
+    "facility": "Facility",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Since 1993",
+    "title_main": "Your Cocoa Source",
+    "title_accent": "Kakao Balkan",
+    "description": "Connecting global cocoa markets with reliable supply solutions. Kakao Balkan specializes in sourcing and distributing premium cocoa products, serving manufacturers and distributors worldwide.",
+    "button_products": "Explore Offer",
+    "button_story": "Our Story",
+    "stat_label1": "YEARS EXPERIENCE",
+    "stat_label2": "ORGANIC",
+    "stat_label3": "COUNTRIES"
+  },
+  "story": {
+    "badge": "OUR MOTO",
+    "title": "Rooted in Tradition, Committed to Quality",
+    "description": "Kakao Balkan bridges global cacao markets through expert sourcing and distribution, upholding strict quality standards to ensure a consistent supply for manufacturers and distributors worldwide.",
+    "feature1_title": "Global Sourcing",
+    "feature1_desc": "Connecting you with cocoa producers from diverse regions around the world.",
+    "feature2_title": "Wide Range",
+    "feature2_desc": "Offering a wide range of cocoa products.",
+    "feature3_title": "Worldwide Shipping",
+    "feature3_desc": "Delivering quality cocoa products directly to your doorstep, wherever you are."
+  },
+    "products": {
+      "badge": "Premium Quality",
+      "title": "Cocoa Products",
+      "description": "We offer high-quality cocoa products sourced from the finest regions around the world — discover the premium quality of cocoa with us.",
+      "see_origins": "See Origins",
+      "interested_title": "Interested in this product?",
+      "interested_description": "Get detailed specifications, pricing, and availability information.",
+      "send_inquiry": "Send Inquiry",
+      "back": "Back",
+      "cocoa_powder": {
+        "title": "Cocoa Powder",
+        "description": "Finely ground cocoa powder with rich flavor and aroma."
+      },
+      "cocoa_liquor": {
+        "title": "Cocoa Liquor",
+        "description": "Essential ingredient for premium chocolate production."
+      },
+      "cocoa_butter": {
+        "title": "Cocoa Butter",
+        "description": "Premium quality cocoa butter. Perfect for chocolate making, cosmetics, and culinary applications."
+      },
+      "cocoa_cake": {
+        "title": "Cocoa Cake",
+        "description": "high-quality cocoa cake, rich in cocoa solids. Perfect ingredient for confectionery and bakery applications."
+      }
+    },
+    "origins": {
+      "malaysia": {
+        "country": "Malaysia",
+        "manufacturer1": "Guan Chong Cocoa Manufacturer"
+      },
+      "indonesia": {
+        "country": "Indonesia",
+        "manufacturer1": "PT Golden Harvest Cocoa Indonesia"
+      },
+      "peru": {
+        "country": "Peru",
+        "manufacturer1": "Machu Picchu Foods SA"
+      },
+      "ivory_coast": {
+        "country": "Côte d'Ivoire",
+        "manufacturer1": "DIAKITE COCOA PRODUCTS SARL",
+        "manufacturer2": "Citract SA"
+      },
+      "ghana": {
+        "country": "Ghana",
+        "manufacturer1": "Chocomac Ghana Limited"
+      },
+      "venezuela": {
+        "country": "Venezuela",
+        "manufacturer1": "Cacaos Venezolanos de Calidad C.A.",
+        "manufacturer2": "Procesadora Cacao Real"
+      },
+      "nigeria": {
+        "country": "Nigeria",
+        "manufacturer1": "Johnwents Industries Limited"
+      },
+      "china": {
+        "country": "China",
+        "manufacturer1": "Huadong Industrial Limited"
+      },
+      "usa": {
+        "country": "USA",
+        "manufacturer1": "Savita Naturals LTD"
+      }
+    },
+    "inquiry": {
+      "select_origin_first": "Please select an origin first.",
+      "message_template": "Dear Kakao Balkan Team,\n\nI am interested in purchasing {productName} from {country} ({manufacturer}).\n\nCould you please provide me with:\n- Detailed product specifications and technical data sheet\n- Current pricing and minimum order quantities\n- Availability and delivery timeframes\n- Quality certificates and documentation\n- Sample availability\n\nI look forward to discussing this opportunity further.\n\nBest regards,"
+    },
+  "process": {
+    "badge": "YOUR GLOBAL CACAO PARTNER",
+    "title": "From Source to Scale",
+    "step1_title": "Global sourcing",
+    "step1_description": "We maintain partnerships with premium suppliers across major cocoa-producing regions worldwide.",
+    "step2_title": "Quality Assurance",
+    "step2_description": "Every shipment undergoes rigorous quality verification to meet international standards and specifications.",
+    "step3_title": "Bulk Distribution",
+    "step3_description": "Also specialized in large-volume orders, we supply manufacturers, distributors, and industrial clients globally.",
+    "step4_title": "Reliable Logistics",
+    "step4_description": "Efficient supply chain management ensures consistent delivery schedules for your production needs."
+  },
+  "facility": {
+    "badge": "Our Operations",
+    "title": "Professional Distribution Center",
+    "description": "Take a look at our modern distribution facility where quality control meets efficient logistics. Our operations ensure consistent supply chains for clients worldwide.",
+    "gallery": {
+      "main_title": "60 000 m² total storage",
+      "main_description": "",
+      "thumb1_title": "60 000 m² total storage",
+      "thumb1_subtitle": "",
+      "thumb2_title": "Ocean freight",
+      "thumb2_subtitle": "",
+      "thumb3_title": "Storage Facility",
+      "thumb3_subtitle": "",
+      "thumb4_title": "Storage",
+      "thumb4_subtitle": "",
+      "thumb5_title": "Logistics",
+      "thumb5_subtitle": "",
+      "thumb6_title": "Accompanying Operations",
+      "thumb6_subtitle": "",
+      "thumb7_title": "Inventory System",
+      "thumb7_subtitle": ""
+    },
+    "stats": {
+      "warehouse_label": "m² Warehouse Space",
+      "storage_label": "tons Storage Capacity",
+      "shipments_label": "Monthly Shipments",
+      "countries_label": "Countries Served"
+    }
+  },
+  "contact": {
+    "badge": "Get in Touch",
+    "title": "Partner With Us for Your Cocoa Needs",
+    "description": "Ready to secure reliable cocoa supply for your business? Contact us to discuss pricing, specifications, and delivery options tailored to your requirements.",
+    "email_label": "Email",
+    "phone_label": "Phone",
+    "location_label": "Location",
+    "form": {
+      "name_label": "Full Name",
+      "email_label": "Email Address",
+      "company_label": "Company",
+      "message_label": "Message",
+      "message_placeholder": "Please describe your requirements, preferred products, delivery location, and any specific needs...",
+      "submit_button": "Send Inquiry"
+    }
+  },
+  "footer": {
+    "description": "Premium cocoa products.",
+    "products_title": "Products",
+    "company_title": "Company",
+    "copyright": "© 2025 Kakao Balkan. All rights reserved.",
+    "attribution_text": "Product image design by"
+  }
+}

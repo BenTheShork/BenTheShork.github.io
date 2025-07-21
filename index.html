@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakao Balkan - Premium Balkan Cacao</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/facility.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/language-picker.css">
+    <script src="js/products-data.js"></script>
+    <script src="js/language-picker.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Kakao Balkan</span>
+                <span class="logo-subtitle">Premium Cacao</span>
+            </div>
+            <div class="language-picker">
+                <button class="language-button" onclick="toggleLanguageDropdown()">
+                    <span class="current-language-flag" id="currentFlag">🇬🇧</span>
+                    <span class="current-language-code" id="currentLang">EN</span>
+                    <svg class="language-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                
+                <div class="language-dropdown" id="languageDropdown">
+                    <div class="language-dropdown-container">
+                        <!-- Language options will be populated by JavaScript -->
+                        <div class="language-option" onclick="changeLanguage('en')">
+                            <div class="language-option-left">
+                                <span class="language-flag">🇬🇧</span>
+                                <span class="language-name">English</span>
+                            </div>
+                            <span class="language-code">EN</span>
+                        </div>
+                        <div class="language-option" onclick="changeLanguage('sr')">
+                            <div class="language-option-left">
+                                <span class="language-flag">🇷🇸</span>
+                                <span class="language-name">Srpski</span>
+                            </div>
+                            <span class="language-code">SR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link" data-translate="navigation.home">Home</a></li>
+                <li><a href="#story" class="nav-link" data-translate="navigation.story">Our Story</a></li>
+                <li><a href="#products" class="nav-link" data-translate="navigation.products">Products</a></li>
+                <li><a href="#process" class="nav-link" data-translate="navigation.process">Process</a></li>
+                <li><a href="#facility" class="nav-link" data-translate="navigation.facility">Facility</a></li>
+                <li><a href="#contact" class="nav-link" data-translate="navigation.contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="floating-elements">
+                <div class="floating-bean bean-1"></div>
+                <div class="floating-bean bean-2"></div>
+                <div class="floating-bean bean-3"></div>
+                <div class="floating-bean bean-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            
+            <div data-translate="hero.badge" class="hero-badge">Since 2020</div>
+            <h1 class="hero-title">
+                <span data-translate="hero.title_main" class="hero-title-main">Your Cocoa Source</span>
+                <span data-translate="hero.title_accent" class="hero-title-accent">Kakao Balkan</span>
+            </h1>
+            <p data-translate="hero.description" class="hero-description">
+                Connecting global cocoa markets with reliable supply solutions. Kakao Balkan specializes in sourcing and distributing premium cocoa products in bulk quantities, serving manufacturers and distributors worldwide.
+            </p>
+            <div class="hero-buttons">
+                <button data-translate="hero.button_products" class="btn btn-primary" onclick="scrollToSection('products')">
+                    Explore Collection
+                </button>
+                <button data-translate="hero.button_story" class="btn btn-secondary" onclick="scrollToSection('story')">
+                    Our Story
+                </button>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number">30+</span>
+                <span data-translate="hero.stat_label1" class="stat-label">YEARS EXPERIENCE</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span data-translate="hero.stat_label2" class="stat-label">ORGANIC</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span data-translate="hero.stat_label3" class="stat-label">COUNTRIES</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="story">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <div data-translate="story.badge" class="section-badge">OUR MOTO</div>
+                    <h2 data-translate="story.title" class="section-title">Rooted in Tradition, Committed to Quality</h2>
+                    <p data-translate="story.description" class="story-description">
+                        Kakao Balkan bridges global cacao markets through large-scale sourcing and distribution. We specialize in bulk quantities while maintaining strict quality standards, ensuring consistent supply for manufacturers, chocolatiers, and distributors worldwide.
+                    </p>
+                    <div class="story-features">
+                        <div class="feature">
+                            <div class="feature-icon">🌱</div>
+                            <div class="feature-text">
+                                <h3 data-translate="story.feature1_title">Global Sourcing</h3>
+                                <p data-translate="story.feature1_desc">Connecting you with cacao from diverse regions around the world.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🏺</div>
+                            <div class="feature-text">
+                                <h3 data-translate="story.feature2_title">Quality Varieties</h3>
+                                <p data-translate="story.feature2_desc">Offering a wide range of cacao varieties.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">⚡</div>
+                            <div class="feature-text">
+                                <h3 data-translate="story.feature3_title">Worldwide Shipping</h3>
+                                <p data-translate="story.feature3_desc">Delivering quality cacao directly to your doorstep, wherever you are.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-visual">
+                    <div class="story-image">
+                        <img src="images/logo/logo-no-background.svg" alt="Kakao Balkan Logo - Premium Cacao" class="story-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Products Section -->
+<section id="products" class="products">
+    <div class="container">
+        <div class="products-header">
+            <div data-translate="products.badge" class="section-badge">Premium Collection</div>
+            <h2 data-translate="products.title" class="section-title">Artisan Cacao Products</h2>
+            <p data-translate="products.description" class="section-description">Each product in our collection represents the pinnacle of global cacao craftsmanship, carefully curated from different origins with detailed specifications for professional use.</p>
+        </div>
+        
+        <div class="products-grid">
+            <!-- Cocoa Powder Product -->
+            <div class="product-card" data-product="powder">
+                <div class="card-inner">
+                    <!-- Front Side -->
+                    <div class="card-front">
+                        <div class="product-image-container">
+                            <img src="images/products/cocoa-powder.jpg" alt="Premium Cocoa Powder" class="product-image">
+                            <div class="product-badge">Premium</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 data-translate="products.cocoa_powder.title" class="product-title">Natural Cocoa Powder</h3>
+                            <p data-translate="products.cocoa_powder.description" class="product-description">
+                                Finely ground cocoa powder with rich flavor and aroma. Ideal for baking, beverages, and gourmet applications.
+                            </p>
+                            <button class="btn-origins" onclick="showOrigins('powder')">
+                                <span data-translate="products.see_origins">See Origins</span>
+                                <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Back Side -->
+                    <div class="card-back">
+                        <div class="inquiry-content">
+                            <div class="inquiry-icon">
+                                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#8B4513" stroke-width="2">
+                                    <path d="M3 8l7.89 3.26a2 2 0 001.22 0L21 8"/>
+                                    <path d="M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <h4 data-translate="products.interested_title">Interested in this product?</h4>
+                            <p data-translate="products.interested_description">Get detailed specifications, pricing, and availability information.</p>
+                            <div class="selected-origin" id="selected-powder">
+                                <!-- Selected origin will appear here -->
+                            </div>
+                            <button data-translate="products.send_inquiry" class="btn-inquiry" onclick="sendInquiry('powder')">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 8l7.89 3.26a2 2 0 001.22 0L21 8"/>
+                                    <path d="M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                                Send Inquiry
+                            </button>
+                            <button data-translate="products.back" class="btn-back" onclick="flipBack('powder')">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M19 12H5"/>
+                                    <path d="M12 19l-7-7 7-7"/>
+                                </svg> 
+                                Back
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Origins Dropdown -->
+                <div class="origins-dropdown" id="origins-powder">
+                    <div class="origins-container">
+                        <div class="origin-option" onclick="selectOrigin('powder', 'malaysia')">
+                            <span class="origin-flag">🇲🇾</span>
+                            <div class="origin-details">
+                                <div data-translate="origins.malaysia.country" class="origin-country">Malaysia</div>
+                                <div data-translate="origins.malaysia.manufacturer1" class="origin-manufacturer">Guan Chong Cocoa Manufacturer</div>
+                            </div>
+                        </div>
+                        <div class="origin-option" onclick="selectOrigin('powder', 'indonesia')">
+                            <span class="origin-flag">🇮🇩</span>
+                            <div class="origin-details">
+                                <div data-translate="origins.indonesia.country" class="origin-country">Indonesia</div>
+                                <div data-translate="origins.indonesia.manufacturer1" class="origin-manufacturer">PT Golden Harvest Cocoa Indonesia</div>
+                            </div>
+                        </div>
+                        <div class="origin-option" onclick="selectOrigin('powder', 'peru')">
+                            <span class="origin-flag">🇵🇪</span>
+                            <div class="origin-details">
+                                <div data-translate="origins.peru.country" class="origin-country">Peru</div>
+                                <div data-translate="origins.peru.manufacturer1" class="origin-manufacturer">Machu Picchu Foods SA</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cocoa Liquor Product -->
+            <div class="product-card" data-product="liquor">
+                <div class="card-inner">
+                    <!-- Front Side -->
+                    <div class="card-front">
+                        <div class="product-image-container">
+                            <img src="images/products/cocoa-liqueur.jpg" alt="Premium Cocoa Liquor" class="product-image">
+                            <div class="product-badge">Artisan</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 data-translate="products.cocoa_liquor.title" class="product-title">Cocoa Liquor</h3>
+                            <p data-translate="products.cocoa_liquor.description" class="product-description">
+                                Pure cocoa mass in liquid form, the essence of chocolate. Essential ingredient for premium chocolate production.
+                            </p>
+                            <button class="btn-origins" onclick="showOrigins('liquor')">
+                                <span data-translate="products.see_origins">See Origins</span>
+                                <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Back Side -->
+                    <div class="card-back">
+                        <div class="inquiry-content">
+                            <div class="inquiry-icon">
+                                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#8B4513" stroke-width="2">
+                                    <path d="M3 8l7.89 3.26a2 2 0 001.22 0L21 8"/>
+                                    <path d="M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <h4 data-translate="products.interested_title">Interested in this product?</h4>
+                            <p data-translate="products.interested_description">Get detailed specifications, pricing, and availability information.</p>
+                            <div class="selected-origin" id="selected-liquor">
+                                <!-- Selected origin will appear here -->
+                            </div>
+                            <button data-translate="products.send_inquiry" class="btn-inquiry" onclick="sendInquiry('liquor')">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 8l7.89 3.26a2 2 0 001.22 0L21 8"/>
+                                    <path d="M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                                Send Inquiry
+                            </button>
+                            <button data-translate="products.back" class="btn-back" onclick="flipBack('liquor')">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M19 12H5"/>
+                                    <path d="M12 19l-7-7 7-7"/>
+                                </svg>
+                                Back
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Origins Dropdown -->
+                <div class="origins-dropdown" id="origins-liquor">
+                    <div class="origins-container">
+                        <div class="origin-option" onclick="selectOrigin('liquor', 'ivory1')">
+                            <span class="origin-flag">🇨🇮</span>
+                            <div class="origin-details">
+                                <div data-translate="origins.ivory_coast.country" class="origin-country">Côte d'Ivoire</div>
+                                <div data-translate="origins.ivory_coast.manufacturer1" class="origin-manufacturer">DIAKITE COCOA PRODUCTS SARL</div>
+                            </div>
+                        </div>
+                        <div class="origin-option" onclick="selectOrigin('liquor', 'ghana')">
+                            <span class="origin-flag">🇬🇭</span>
+                            <div class="origin-details">
+                                <div data-translate="origins.ghana.country" class="origin-country">Ghana</div>
+                                <div data-translate="origins.ghana.manufacturer1" class="origin-manufacturer">Chocomac Ghana Limited</div>
+                            </div>
+                        </div>
+                        <div class="origin-option" onclick="selectOrigin('liquor', 'ivory2')">
+                            <span class="origin-flag">🇨🇮</span>
+                            <div class="origin-details">
+                                <div data-translate="origins.ivory_coast.country" class="origin-country">Côte d'Ivoire</div>
+                                <div data-translate="origins.ivory_coast.manufacturer2" class="origin-manufacturer">Citract SA</div>
+                            </div>
+                        </div>
+                        <div class="origin-option" onclick="selectOrigin('liquor', 'peru')">
+                            <span class="origin-flag">🇵🇪</span>
+                            <div class="origin-details">
+                                <div data-translate="origins.peru.country" class="origin-country">Peru</div>
+                                <div data-translate="origins.peru.manufacturer1" class="origin-manufacturer">Machu Picchu Foods SA</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cocoa Butter Product -->
+            <div class="product-card" data-product="butter">
+                <div class="card-inner">
+                    <!-- Front Side -->
+                    <div class="card-front">
+                        <div class="product-image-container">
+                            <img src="images/products/cocoa-butter.jpg" alt="Premium Cocoa Butter" class="product-image">
+                            <div class="product-badge">Finest</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 data-translate="products.cocoa_butter.title" class="product-title">Pure Cocoa Butter</h3>
+                            <p data-translate="products.cocoa_butter.description" class="product-description">
+                                Premium quality cocoa butter. Perfect for chocolate making, cosmetics, and culinary applications.
+                            </p>
+                            <button class="btn-origins" onclick="showOrigins('butter')">
+                                <span data-translate="products.see_origins">See Origins</span>
+                                <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Back Side -->
+                    <div class="card-back">
+                        <div class="inquiry-content">
+                            <div class="inquiry-icon">
+                                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#8B4513" stroke-width="2">
+                                    <path d="M3 8l7.89 3.26a2 2 0 001.22 0L21 8"/>
+                                    <path d="M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <h4 data-translate="products.interested_title">Interested in this product?</h4>
+                            <p data-translate="products.interested_description">Get detailed specifications, pricing, and availability information.</p>
+                            <div class="selected-origin" id="selected-butter">
+                                <!-- Selected origin will appear here -->
+                            </div>
+                            <button data-translate="products.send_inquiry" class="btn-inquiry" onclick="sendInquiry('butter')">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 8l7.89 3.26a2 2 0 001.22 0L21 8"/>
+                                    <path d="M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                                Send Inquiry
+                            </button>
+                            <button data-translate="products.back" class="btn-back" onclick="flipBack('butter')">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M19 12H5"/>
+                                    <path d="M12 19l-7-7 7-7"/>
+                                </svg>
+                                Back
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Origins Dropdown -->
+                <div class="origins-dropdown" id="origins-butter">
+                    <div class="origins-container">
+                        <div class="origin-option" onclick="selectOrigin('butter', 'venezuela1')">
+                            <span class="origin-flag">🇻🇪</span>
+                            <div class="origin-details">
+                                <div data-translate="origins.venezuela.country" class="origin-country">Venezuela</div>
+                                <div data-translate="origins.venezuela.manufacturer1" class="origin-manufacturer">Cacaos Venezolanos de Calidad C.A.</div>
+                            </div>
+                        </div>
+                        <div class="origin-option" onclick="selectOrigin('butter', 'venezuela2')">
+                            <span class="origin-flag">🇻🇪</span>
+                            <div class="origin-details">
+                                <div data-translate="origins.venezuela.country" class="origin-country">Venezuela</div>
+                                <div data-translate="origins.venezuela.manufacturer2" class="origin-manufacturer">Procesadora Cacao Real</div>
+                            </div>
+                        </div>
+                        <div class="origin-option" onclick="selectOrigin('butter', 'ivory')">
+                            <span class="origin-flag">🇨🇮</span>
+                            <div class="origin-details">
+                                <div data-translate="origins.ivory_coast.country" class="origin-country">Côte d'Ivoire</div>
+                                <div data-translate="origins.ivory_coast.manufacturer1" class="origin-manufacturer">DIAKITE COCOA PRODUCTS SARL</div>
+                            </div>
+                        </div>
+                        <div class="origin-option" onclick="selectOrigin('butter', 'peru')">
+                            <span class="origin-flag">🇵🇪</span>
+                            <div class="origin-details">
+                                <div data-translate="origins.peru.country" class="origin-country">Peru</div>
+                                <div data-translate="origins.peru.manufacturer1" class="origin-manufacturer">Machu Picchu Foods SA</div>
+                            </div>
+                        </div>
+                        <div class="origin-option" onclick="selectOrigin('butter', 'nigeria')">
+                            <span class="origin-flag">🇳🇬</span>
+                            <div class="origin-details">
+                                <div data-translate="origins.nigeria.country" class="origin-country">Nigeria</div>
+                                <div data-translate="origins.nigeria.manufacturer1" class="origin-manufacturer">Johnwents Industries Limited</div>
+                            </div>
+                        </div>
+                        <div class="origin-option" onclick="selectOrigin('butter', 'china')">
+                            <span class="origin-flag">🇨🇳</span>
+                            <div class="origin-details">
+                                <div data-translate="origins.china.country" class="origin-country">China</div>
+                                <div data-translate="origins.china.manufacturer1" class="origin-manufacturer">Huadong Industrial Limited</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cocoa Cake Product -->
+            <div class="product-card" data-product="cake">
+                <div class="card-inner">
+                    <!-- Front Side -->
+                    <div class="card-front">
+                        <div class="product-image-container">
+                            <img src="images/products/cocoa-cake.jpg" alt="Premium Cocoa Cake" class="product-image">
+                            <div class="product-badge">Quality</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 data-translate="products.cocoa_cake.title" class="product-title">Cocoa Cake</h3>
+                            <p data-translate="products.cocoa_cake.description" class="product-description">
+                                High-quality cocoa cake, the solid remainder after pressing cocoa butter. Perfect for further processing and specialized applications.
+                            </p>
+                            <button class="btn-origins" onclick="showOrigins('cake')">
+                                <span data-translate="products.see_origins">See Origins</span>
+                                <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Back Side -->
+                    <div class="card-back">
+                        <div class="inquiry-content">
+                            <div class="inquiry-icon">
+                                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#8B4513" stroke-width="2">
+                                    <path d="M3 8l7.89 3.26a2 2 0 001.22 0L21 8"/>
+                                    <path d="M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <h4 data-translate="products.interested_title">Interested in this product?</h4>
+                            <p data-translate="products.interested_description">Get detailed specifications, pricing, and availability information.</p>
+                            <div class="selected-origin" id="selected-cake">
+                                <!-- Selected origin will appear here -->
+                            </div>
+                            <button data-translate="products.send_inquiry" class="btn-inquiry" onclick="sendInquiry('cake')">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 8l7.89 3.26a2 2 0 001.22 0L21 8"/>
+                                    <path d="M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                                Send Inquiry
+                            </button>
+                            <button data-translate="products.back" class="btn-back" onclick="flipBack('cake')">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M19 12H5"/>
+                                    <path d="M12 19l-7-7 7-7"/>
+                                </svg>
+                                Back
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Origins Dropdown -->
+                <div class="origins-dropdown" id="origins-cake">
+                    <div class="origins-container">
+                        <div class="origin-option" onclick="selectOrigin('cake', 'usa')">
+                            <span class="origin-flag">🇺🇸</span>
+                            <div class="origin-details">
+                                <div data-translate="origins.usa.country" class="origin-country">USA</div>
+                                <div data-translate="origins.usa.manufacturer1" class="origin-manufacturer">Savita Naturals LTD</div>
+                            </div>
+                        </div>
+                        <div class="origin-option" onclick="selectOrigin('cake', 'venezuela')">
+                            <span class="origin-flag">🇻🇪</span>
+                            <div class="origin-details">
+                                <div data-translate="origins.venezuela.country" class="origin-country">Venezuela</div>
+                                <div data-translate="origins.venezuela.manufacturer2" class="origin-manufacturer">Procesadora Cacao Real</div>
+                            </div>
+                        </div>
+                        <div class="origin-option" onclick="selectOrigin('cake', 'ivory')">
+                            <span class="origin-flag">🇨🇮</span>
+                            <div class="origin-details">
+                                <div data-translate="origins.ivory_coast.country" class="origin-country">Côte d'Ivoire</div>
+                                <div data-translate="origins.ivory_coast.manufacturer1" class="origin-manufacturer">DIAKITE COCOA PRODUCTS SARL</div>
+                            </div>
+                        </div>
+                        <div class="origin-option" onclick="selectOrigin('cake', 'peru')">
+                            <span class="origin-flag">🇵🇪</span>
+                            <div class="origin-details">
+                                <div data-translate="origins.peru.country" class="origin-country">Peru</div>
+                                <div data-translate="origins.peru.manufacturer1" class="origin-manufacturer">Machu Picchu Foods SA</div>
+                            </div>
+                        </div>
+                        <div class="origin-option" onclick="selectOrigin('cake', 'nigeria')">
+                            <span class="origin-flag">🇳🇬</span>
+                            <div class="origin-details">
+                                <div data-translate="origins.nigeria.country" class="origin-country">Nigeria</div>
+                                <div data-translate="origins.nigeria.manufacturer1" class="origin-manufacturer">Johnwents Industries Limited</div>
+                            </div>
+                        </div>
+                        <div class="origin-option" onclick="selectOrigin('cake', 'china')">
+                            <span class="origin-flag">🇨🇳</span>
+                            <div class="origin-details">
+                                <div data-translate="origins.china.country" class="origin-country">China</div>
+                                <div data-translate="origins.china.manufacturer1" class="origin-manufacturer">Huadong Industrial Limited</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="process-header">
+                <div data-translate="process.badge" class="section-badge">YOUR GLOBAL CACAO PARTNER</div>
+                <h2 data-translate="process.title" class="section-title">From Source to Scale</h2>
+            </div>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 data-translate="process.step1_title">Global sourcing</h3>
+                        <p data-translate="process.step1_description">We maintain partnerships with premium suppliers across major cacao-producing regions worldwide.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 data-translate="process.step2_title">Quality Assurance</h3>
+                        <p data-translate="process.step2_description">Every shipment undergoes rigorous quality verification to meet international standards and specifications.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 data-translate="process.step3_title">Bulk Distribution</h3>
+                        <p data-translate="process.step3_description">Also specialized in large-volume orders, we supply manufacturers, distributors, and industrial clients globally.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3 data-translate="process.step4_title">Reliable Logistics</h3>
+                        <p data-translate="process.step4_description">Efficient supply chain management ensures consistent delivery schedules for your production needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Facility Section -->
+<section id="facility" class="facility">
+    <div class="container">
+        <div class="facility-header">
+            <div data-translate="facility.badge" class="section-badge">Our Operations</div>
+            <h2 data-translate="facility.title" class="section-title">Professional Distribution Center</h2>
+            <p data-translate="facility.description" class="section-description">
+                Take a look at our modern distribution facility where quality control meets efficient logistics. Our operations ensure consistent supply chains for clients worldwide.
+            </p>
+        </div>
+        
+        <div class="facility-gallery">
+            <div class="gallery-main">
+                <div class="main-image" id="mainImage">
+                    <img src="images/warehouse/facility-1.jpg" alt="Warehouse Overview" class="main-facility-image">
+                    <div class="image-overlay">
+                        <h4 data-translate="facility.gallery.main_title">Warehouse Overview</h4>
+                        <p data-translate="facility.gallery.main_description"></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="thumbnail-item active" data-image="0" onclick="switchMainImage(0)">
+                    <img src="images/warehouse/facility-1.jpg" alt="Warehouse Overview" class="thumbnail-image">
+                    <div class="thumbnail-overlay">
+                        <h5 data-translate="facility.gallery.thumb1_title"></h5>
+                        <p data-translate="facility.gallery.thumb1_subtitle"></p>
+                    </div>
+                </div>
+                
+                <div class="thumbnail-item" data-image="1" onclick="switchMainImage(1)">
+                    <img src="images/warehouse/facility-2.jpg" alt="Quality Control Lab" class="thumbnail-image">
+                    <div class="thumbnail-overlay">
+                        <h5 data-translate="facility.gallery.thumb2_title"></h5>
+                        <p data-translate="facility.gallery.thumb2_subtitle"></p>
+                    </div>
+                </div>
+                
+                <div class="thumbnail-item" data-image="2" onclick="switchMainImage(2)">
+                    <img src="images/warehouse/facility-3.jpg" alt="Storage Area" class="thumbnail-image">
+                    <div class="thumbnail-overlay">
+                        <h5 data-translate="facility.gallery.thumb3_title"></h5>
+                        <p data-translate="facility.gallery.thumb3_subtitle"></p>
+                    </div>
+                </div>
+                
+                <div class="thumbnail-item" data-image="3" onclick="switchMainImage(3)">
+                    <img src="images/warehouse/facility-4.jpg" alt="Loading Bay" class="thumbnail-image">
+                    <div class="thumbnail-overlay">
+                        <h5 data-translate="facility.gallery.thumb4_title"></h5>
+                        <p data-translate="facility.gallery.thumb4_subtitle"></p>
+                    </div>
+                </div>
+                
+                <div class="thumbnail-item" data-image="4" onclick="switchMainImage(4)">
+                    <img src="images/warehouse/facility-5.jpg" alt="Packaging Area" class="thumbnail-image">
+                    <div class="thumbnail-overlay">
+                        <h5 data-translate="facility.gallery.thumb5_title"></h5>
+                        <p data-translate="facility.gallery.thumb5_subtitle"></p>
+                    </div>
+                </div>
+                
+                <div class="thumbnail-item" data-image="5" onclick="switchMainImage(5)">
+                    <img src="images/warehouse/facility-6.jpg" alt="Inventory Management" class="thumbnail-image">
+                    <div class="thumbnail-overlay">
+                        <h5 data-translate="facility.gallery.thumb6_title"></h5>
+                        <p data-translate="facility.gallery.thumb6_subtitle"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="facility-stats">
+            <div class="facility-stat">
+                <div class="stat-icon">🏭</div>
+                <div class="stat-content">
+                    <span class="stat-number">60,000</span>
+                    <span data-translate="facility.stats.warehouse_label" class="stat-label">m² Warehouse Space</span>
+                </div>
+            </div>
+            <div class="facility-stat">
+                <div class="stat-icon">📦</div>
+                <div class="stat-content">
+                    <span class="stat-number">200</span>
+                    <span data-translate="facility.stats.storage_label" class="stat-label">tons Storage Capacity</span>
+                </div>
+            </div>
+            <div class="facility-stat">
+                <div class="stat-icon">🚛</div>
+                <div class="stat-content">
+                    <span class="stat-number">15+</span>
+                    <span data-translate="facility.stats.shipments_label" class="stat-label">Monthly Shipments</span>
+                </div>
+            </div>
+            <div class="facility-stat">
+                <div class="stat-icon">🌍</div>
+                <div class="stat-content">
+                    <span class="stat-number">10+</span>
+                    <span data-translate="facility.stats.countries_label" class="stat-label">Countries Served</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+    <div class="container">
+        <div class="contact-content">
+            <div class="contact-info">
+                <div data-translate="contact.badge" class="section-badge">Get in Touch</div>
+                <h2 data-translate="contact.title" class="section-title">Partner With Us for Your Cacao Needs</h2>
+                <p data-translate="contact.description" class="contact-description">
+                    Ready to secure reliable cacao supply for your business? Contact us to discuss pricing, specifications, and delivery options tailored to your requirements.
+                </p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-text">
+                            <span data-translate="contact.email_label" class="contact-label">Email</span>
+                            <span class="contact-value">igor.sergejev@kakaobalkan.rs</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-text">
+                            <span data-translate="contact.phone_label" class="contact-label">Phone</span>
+                            <span class="contact-value">+381 (0) 654 061 540</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-text">
+                            <span data-translate="contact.location_label" class="contact-label">Location</span>
+                            <span class="contact-value">Belgrade, Serbia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label data-translate="contact.form.name_label" for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label data-translate="contact.form.email_label" for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label data-translate="contact.form.company_label" for="company">Company</label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+               
+                <div class="form-group">
+                    <label data-translate="contact.form.message_label" for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required data-translate-placeholder="contact.form.message_placeholder"></textarea>
+                </div>
+                <button data-translate="contact.form.submit_button" type="submit" class="btn btn-primary">Send Inquiry</button>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-text">Kakao Balkan</span>
+                <p data-translate="footer.description" class="footer-description">
+                    Premium Balkan cacao, crafted with tradition and passion.
+                </p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4 data-translate="footer.products_title">Products</h4>
+                    <ul>
+                        <li><a href="#products" data-translate="products.cocoa_powder.title">Cocoa Powder</a></li>
+                        <li><a href="#products" data-translate="products.cocoa_liquor.title">Cocoa Liquor</a></li>
+                        <li><a href="#products" data-translate="products.cocoa_butter.title">Cocoa Butter</a></li>
+                        <li><a href="#products" data-translate="products.cocoa_cake.title">Cocoa Cake</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.company_title">Company</h4>
+                    <ul>
+                        <li><a href="#story" data-translate="navigation.story">Our Story</a></li>
+                        <li><a href="#process" data-translate="navigation.process">Process</a></li>
+                        <li><a href="#facility" data-translate="navigation.facility">Facility</a></li>
+                        <li><a href="#contact" data-translate="navigation.contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-translate="footer.copyright">&copy; 2025 Kakao Balkan. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Facebook</a>
+            </div>
+            <p class="attribution">
+                <span data-translate="footer.attribution_text">Product image design by</span> <a href="https://www.freepik.com" class="credit-link" target="_blank" rel="noopener">Freepik</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script defer src="js/navigation.js"></script>
+<script defer src="js/animations.js"></script>
+<script defer src="js/contact-form.js"></script>
+<script defer src="js/facility-gallery.js"></script>
+<script defer src="js/products-ui.js"></script>
+<script defer src="js/main-init.js"></script>
+
+</body>
+</html>
