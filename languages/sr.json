@@ -93,7 +93,12 @@
     "usa": {
       "country": "SAD",
       "manufacturer1": "Savita Naturals LTD"
-    }
+    },
+      "ecuador": {
+        "country": "Ekvador",
+        "manufacturer1": "Chocolates Finos Nacionales Cofina S.A. ",
+        "manufacturer2": "Ecuador Kakao Processing Proecuakao S.A."
+      }
   },
   "inquiry": {
     "select_origin_first": "Molimo vas da prvo izaberete poreklo.",

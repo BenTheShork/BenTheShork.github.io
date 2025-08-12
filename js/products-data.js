@@ -54,6 +54,18 @@ const productData = {
                 countryTranslationKey: "origins.peru.country",
                 manufacturer: "Machu Picchu Foods SA", 
                 flag: "🇵🇪" 
+            },
+            ecuador1: {
+                country: "Ecuador",
+                countryTranslationKey: "origins.ecuador.country",
+                manufacturer: "Chocolates Finos Nacionales Cofina S.A. ",
+                flag: "🇪🇨"
+            },
+            ecuador2: {
+                country: "Ecuador",
+                countryTranslationKey: "origins.ecuador.country",
+                manufacturer: "Ecuador Kakao Processing Proecuakao S.A. ",
+                flag: "🇪🇨"
             }
         }
     },
@@ -96,6 +108,18 @@ const productData = {
                 countryTranslationKey: "origins.china.country",
                 manufacturer: "Huadong Industrial Limited", 
                 flag: "🇨🇳" 
+            },
+            ecuador1: {
+                country: "Ecuador",
+                countryTranslationKey: "origins.ecuador.country",
+                manufacturer: "Chocolates Finos Nacionales Cofina S.A. ",
+                flag: "🇪🇨"
+            },
+            ecuador2: {
+                country: "Ecuador",
+                countryTranslationKey: "origins.ecuador.country",
+                manufacturer: "Ecuador Kakao Processing Proecuakao S.A. ",
+                flag: "🇪🇨"
             }
         }
     },
