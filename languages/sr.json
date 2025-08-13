@@ -53,6 +53,10 @@
     "cocoa_cake": {
       "title": "Kakao pogača",
       "description": "Kakao pogača visokog kvaliteta, bogata kakao čvrstim materijama. Idealan sastojak za konditorsku i pekarsku industriju."
+    },
+    "cocoa_bean": {
+      "title": "Zrna kakaa",
+      "description": "Kakao zrna vrhunskog kvaliteta, pažljivo nabavljena i odabrana za optimalan ukus i aromu. Idealna za prženje, mlevenje i pravljenje vrhunske čokolade ili specijalnih kakao proizvoda."
     }
   },
   "origins": {

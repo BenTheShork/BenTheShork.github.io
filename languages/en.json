@@ -53,6 +53,10 @@
       "cocoa_cake": {
         "title": "Cocoa Cake",
         "description": "high-quality cocoa cake, rich in cocoa solids. Perfect ingredient for confectionery and bakery applications."
+      },
+      "cocoa_bean": {
+        "title": "Cocoa Beans",
+        "description": "Premium-grade cocoa beans, carefully sourced and selected for optimal flavor and aroma. Ideal for roasting, grinding, and crafting fine chocolate or specialty cocoa products."
       }
     },
     "origins": {

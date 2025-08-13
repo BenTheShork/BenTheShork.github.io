@@ -74,12 +74,6 @@
     <section id="home" class="hero">
         <div class="hero-background">
             <div class="hero-overlay"></div>
-            <div class="floating-elements">
-                <div class="floating-bean bean-1"></div>
-                <div class="floating-bean bean-2"></div>
-                <div class="floating-bean bean-3"></div>
-                <div class="floating-bean bean-4"></div>
-            </div>
         </div>
         <div class="hero-content">
             
@@ -572,6 +566,75 @@
                             <div class="origin-details">
                                 <div data-translate="origins.china.country" class="origin-country">China</div>
                                 <div data-translate="origins.china.manufacturer1" class="origin-manufacturer">Huadong Industrial Limited</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cocoa Beans Product -->
+            <div class="product-card" data-product="bean">
+                <div class="card-inner">
+                    <!-- Front Side -->
+                    <div class="card-front">
+                        <div class="product-image-container">
+                            <img src="images/products/cocoa-bean.jpg" alt="Fine Cocoa Beans" class="product-image">
+                            <div class="product-badge">Natural</div>
+                        </div>
+                        <div class="product-content">
+                            <h3 data-translate="products.cocoa_bean.title" class="product-title">Cocoa Beans</h3>
+                            <p data-translate="products.cocoa_bean.description" class="product-description">
+                                Premium-grade cocoa beans, carefully sourced and selected for optimal flavor and aroma. Ideal for roasting, grinding, and crafting fine chocolate or specialty cocoa products.
+                            </p>
+                            <button class="btn-origins" onclick="showOrigins('bean')">
+                                <span data-translate="products.see_origins">See Origins</span>
+                                <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Back Side -->
+                    <div class="card-back">
+                        <div class="inquiry-content">
+                            <div class="inquiry-icon">
+                                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#8B4513" stroke-width="2">
+                                    <path d="M3 8l7.89 3.26a2 2 0 001.22 0L21 8"/>
+                                    <path d="M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <h4 data-translate="products.interested_title">Interested in this product?</h4>
+                            <p data-translate="products.interested_description">Get detailed specifications, pricing, and availability information.</p>
+                            <div class="selected-origin" id="selected-bean">
+                                <!-- Selected origin will appear here -->
+                            </div>
+                            <button data-translate="products.send_inquiry" class="btn-inquiry" onclick="sendInquiry('bean')">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 8l7.89 3.26a2 2 0 001.22 0L21 8"/>
+                                    <path d="M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                                Send Inquiry
+                            </button>
+                            <button data-translate="products.back" class="btn-back" onclick="flipBack('bean')">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M19 12H5"/>
+                                    <path d="M12 19l-7-7 7-7"/>
+                                </svg>
+                                Back
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Origins Dropdown -->
+                <div class="origins-dropdown" id="origins-bean">
+                    <div class="origins-container">
+                        <div class="origin-option" onclick="selectOrigin('bean', 'ecuador')">
+                            <span class="origin-flag">🇪🇨</span>
+                            <div class="origin-details">
+                                <div data-translate="origins.ecuador.country" class="origin-country">Ecuador</div>
+                                <div data-translate="origins.ecuador.manufacturer" class="origin-manufacturer">ECO-KAKAO S.A.</div>
                             </div>
                         </div>
                     </div>

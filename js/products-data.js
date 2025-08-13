@@ -164,6 +164,18 @@ const productData = {
                 flag: "🇨🇳" 
             }
         }
+    },
+    bean: {
+        name: "Cocoa Beans",
+        translationKey: "products.cocoa_bean.title",
+        origins: {
+            ecuador: { 
+                country: "Ecuador", 
+                countryTranslationKey: "origins.ecuador.country",
+                manufacturer: "ECO-KAKAO S.A.", 
+                flag: "🇪🇨" 
+            }
+        }
     }
 };
 
