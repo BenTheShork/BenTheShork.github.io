@@ -44,7 +44,7 @@ function switchMainImage(index) {
     mainImage.style.opacity = '0';
     setTimeout(() => {
         mainImage.innerHTML = `
-            <img src="${imageData.src}" alt="${imageData.alt}" class="main-facility-image">
+            <img data-src="${imageData.src}" alt="${imageData.alt}" class="main-facility-image">
             <div class="image-overlay">
             </div>
         `;
